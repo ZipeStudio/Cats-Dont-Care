@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "me.zipestudio.cdc.mixin",
+	"refmap": "${mod_id}.refmap.json",
+	"compatibilityLevel": "JAVA_${java}",
+	"mixins": [
+		"MoveToBlockGoalMixin"
+	],
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
