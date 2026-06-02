@@ -15,9 +15,6 @@ public class CDCServer {
 
 	public static Logger LOGGER = LoggerFactory.getLogger(CDCServer.MOD_NAME);
 
-	public static final TagKey<Block> CAT_REST_SPOTS =
-			TagKey.create(Registries.BLOCK, id(MOD_ID, "cat_carpets"));
-
 	public static ResourceLocation id(String path) {
 		return id(MOD_ID, path);
 	}

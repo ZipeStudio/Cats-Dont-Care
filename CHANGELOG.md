@@ -1,4 +1,6 @@
-v1.0.0:
+v1.0.1:
 ### Changes
-### Fixes
-### Internal
+- Changed the MoveToBlockGoalMixin for carpets to the `instanceof` type.
+- Moved the block tags in the datapack from two files to the main `cozy_spots.json` file.
+### Internal changes
+- Updated the `README.md` file.

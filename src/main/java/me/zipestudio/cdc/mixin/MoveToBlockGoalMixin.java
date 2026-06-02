@@ -4,7 +4,10 @@ import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import me.zipestudio.cdc.CDCServer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.ai.goal.CatLieOnBedGoal;
+import net.minecraft.world.entity.ai.goal.CatSitOnBlockGoal;
 import net.minecraft.world.entity.ai.goal.MoveToBlockGoal;
+import net.minecraft.world.level.block.CarpetBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -33,7 +36,7 @@ public class MoveToBlockGoalMixin {
         if (!(this.mob instanceof Cat)) return original;
 
         BlockState state = mob.level().getBlockState(this.blockPos);
-        if (state.is(CDCServer.CAT_REST_SPOTS)) {
+        if (state.getBlock() instanceof CarpetBlock) {
             return this.blockPos;
         }
 

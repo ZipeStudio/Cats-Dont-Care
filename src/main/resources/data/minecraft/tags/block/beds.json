@@ -1,9 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:hay_block",
-    "minecraft:furnace",
-    "minecraft:barrel",
-    "#cats_dont_care:cat_carpets"
+    "#cats_dont_care:cozy_spots"
   ]
 }
