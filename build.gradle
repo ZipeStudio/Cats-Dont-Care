@@ -25,7 +25,6 @@ mossyDependencies {
 
 mossyResources {
 	//expandFiles = ["file pattern"]
-	customProperty("mossylib_version", MossyUtils.substringBefore(prop("dep.mossylib"), "+"))
 }
 
 String prop(String key) {
